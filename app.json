@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "webstrategy-app",
+    "name": "WebStrategy Proyectos",
     "slug": "webstrategy-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -19,6 +19,21 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Permite usar Face ID para iniciar sesi\u00f3n."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite elegir tu foto de perfil."
+        }
+      ]
+    ]
   }
 }
